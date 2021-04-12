@@ -47,12 +47,8 @@ footer div p {
 }
 
 /* Middle section */
-#middle-section {
-    background-color: lightgray;
-}
 
 #left {
-    background-color: lightgreen;
     position: relative;
     width: 50%;
 }
@@ -74,22 +70,22 @@ footer div p {
     
     #left img {
         padding: 0;
+        height: 100%;
     }
-  }
+}
+
+@media only screen and (min-width: 992px) {
+    #about-content {
+        position: absolute;
+    }
+}
 
 #left img {
-    width: 100%; 
-    height: 100%;   
+    width: 100%;    
     position: absolute;
     top:0;
     left: 0;
     padding: 10px;
-    
-}
-
-#right {
-    background-color: lightpink;
-    height: 100%;
 }
 
 #special {
@@ -101,15 +97,14 @@ footer div p {
     position: relative;
 }
 
-
-#about {
-    background-color: darkseagreen;
-    height: auto;
+#special-offers img {
+    width: 75px;
+    height: 90px;
 }
 
-#about-content {
-    background-color: darkslategray;
-    height: 150px;
+
+#about {
+    height: auto;
 }
 
 #small-video {
@@ -137,10 +132,7 @@ footer div p {
     padding-top: 56.7%;
 }
 
-#motto {
-    background-color: lightsalmon;
-    height: 100px;  
-}
+
 
 #additional-info {
     margin-top: 50px;
@@ -158,9 +150,8 @@ footer div p {
 }
 
 
-
 #bottom-section {
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 #bottom-section a {

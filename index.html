@@ -15,10 +15,10 @@
         <div class="row align-items-center">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid ps-0 pe-0">
-                    <div id="logo" class="col col-md-3">
+                    <div id="logo" class="col col-md-4 col-lg-3 pe-2">
                         <img src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
                     </div>
-                    <div id="search-bar" class="col col-md-3">    
+                    <div id="search-bar" class="d-none d-lg-block col col-md-3">    
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                     </button>
                     <div class="collapse navbar-collapse ms-auto col-6" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <div id="search-bar" class="pt-2">    
+                        <div id="search-bar" class="d-block d-lg-none pt-2">    
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
                       <a class="nav-link" aria-current="page" href="#">О КОМПАНИИ</a>
@@ -47,8 +47,9 @@
                 <img src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
             </div>
             <div id="right" class="col-12 col-md-6 pt-4 order-1 order-md-2">
-                <div id="motto" class="row">
-
+                <div id="motto" class="row text-center pe-5">
+                    <p class="fs-2 fst-italic m-0">Современная лаборатория – </p>
+                    <p class="fs-2 fst-italic m-0 ms-5">от проекта до комплектации</p> 
                 </div>
                 <div id="link-bar" class="row d-flex justify-content-around mt-4 mb-4">
                     <div class="bar-link col-3">
@@ -58,30 +59,39 @@
                         
                     </div>
                     <div class="bar-link col-3">
-                        hye
+                        
                     </div>
                 </div>
-                <div id="about" class="row mt-4">
-                    <div id="about-content" class="col col-md-8 offset-md-4 d-none d-md-block">
-                        
+                <div id="about" class="row mt-5 position-relative">
+                    <div id="about-content" class="col col-xl-8 offset-xl-4 d-none d-lg-block">
+                        <p class="fs-5 text-uppercase fst-italic fw-bold">О компании</p>
+                        <p>АО «Вектор-Бест-Балтика» является региональным представительством АО «Вектор-Бест», крупнейшего российского предприятия по производству тестов для диагностики заболеваний человека методами иммуноферментного анализа, ПЦР в режиме реального времени и клинической биохимии.</p>
+                        <p class="d-none d-xl-block">Вот уже 20 лет мы являемся лидерами рынка диагностической продукции для медицинских учреждений Северо-Западного региона, проводим комплексное оснащение лабораторной службы современным оборудованием, наборами реагентов, контрольными и вспомогательными материалами, оказываем сервисную и методическую поддержку.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="about-content-hidden" class="col d-block d-lg-none text-center pt-2 pb-2">
+            <p class="fs-5 text-uppercase fst-italic fw-bold">О компании</p>
+            <p>АО «Вектор-Бест-Балтика» является региональным представительством АО «Вектор-Бест», крупнейшего российского предприятия по производству тестов для диагностики заболеваний человека методами иммуноферментного анализа, ПЦР в режиме реального времени и клинической биохимии.</p>
+            <p>Вот уже 20 лет мы являемся лидерами рынка диагностической продукции для медицинских учреждений Северо-Западного региона, проводим комплексное оснащение лабораторной службы современным оборудованием, наборами реагентов, контрольными и вспомогательными материалами, оказываем сервисную и методическую поддержку.</p>
+        </div>
+
         <div id="special" class="row mt-4">
-            <div id="special-offers" class="col col-md-4">
-                <p class="fs-5 text-uppercase fst-italic">Специальные предложения</p>
-                
-                <p></p>
+            <div id="special-offers" class="col-12 col-sm-7 col-lg-4">
+                <p class="fs-5 text-uppercase fst-italic mt-2">Специальные предложения</p>
+                <div class="d-flex align-items-center position-relative mb-2 ">
+                    <img class="pe-4" src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
+                    <p>Серологические и молекулярно-биологические методы (ИФА и ПЦР-анализ) для эффективной лабораторной диагностики клещевых инфекций</p>
+                </div>
             </div>
-            <div id="small-video" class="col col-md-3">
+            <div id="small-video" class="col-12 col-sm-5 col-lg-3 pt-2">
                 <img src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
                 <div class="link"><a href="www.google.com">Другие видео</a></div>
             </div>
         </div>
     </section>
-
-    
 
     <section id="bottom-section" class="container">
         <h1>НОВОСТИ <a href="">Все новости</a></h1>
