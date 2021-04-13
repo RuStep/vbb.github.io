@@ -22,7 +22,9 @@
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
                     </button>
                     <div class="collapse navbar-collapse ms-auto col-6" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
@@ -44,7 +46,29 @@
     <section id="middle-section" class="container">
         <div class="row d-flex">
             <div id="left" class="col-12 col-md-6 order-2 pb-4 order-md-1">
-                <img src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
+                <div>
+                    <button class="slider-left position-absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </button>
+                    <img src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
+                    <button class="slider-right position-absolute">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                    <div class="slider-text position-absolute">
+                        <p class="slider-header fs-2 fw-bold">CFX96 TOUCH</p>
+                        <p class="slider-paragraph fs-5">CFX96 Touch™ Real-Time PCR  –высокоскоростной прибор для проведения ПЦР, с возможностью регистрации продуктов реакции в режиме реального времени</p>
+                    </div>
+                    <div class="slides">
+                        <div class="slide"></div>
+                        <div class="slide active"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                </div>
             </div>
             <div id="right" class="col-12 col-md-6 pt-4 order-1 order-md-2">
                 <div id="motto" class="row text-center pe-5">
@@ -63,8 +87,11 @@
                     </div>
                 </div>
                 <div id="about" class="row mt-5 position-relative">
-                    <div id="about-content" class="col col-xl-8 offset-xl-4 d-none d-lg-block">
-                        <p class="fs-5 text-uppercase fst-italic fw-bold">О компании</p>
+                    <div id="about-content" class="col col-xl-8 offset-1 offset-xl-4 d-none d-lg-block">
+                        <svg class="pink-wrapper-small" width="55" height="41" viewBox="0 0 55 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.17317 10.3331C10.721 4.68486 15.8544 0.768921 21.7109 0.768921H54.8325L46.4919 31.2048C44.944 36.853 39.8106 40.7689 33.9541 40.7689H0.83252L9.17317 10.3331Z" fill="#F8246B" fill-opacity="0.15"/>
+                        </svg>
+                        <div class="fs-5 text-uppercase fst-italic fw-bold mb-3">О компании</div>
                         <p>АО «Вектор-Бест-Балтика» является региональным представительством АО «Вектор-Бест», крупнейшего российского предприятия по производству тестов для диагностики заболеваний человека методами иммуноферментного анализа, ПЦР в режиме реального времени и клинической биохимии.</p>
                         <p class="d-none d-xl-block">Вот уже 20 лет мы являемся лидерами рынка диагностической продукции для медицинских учреждений Северо-Западного региона, проводим комплексное оснащение лабораторной службы современным оборудованием, наборами реагентов, контрольными и вспомогательными материалами, оказываем сервисную и методическую поддержку.</p>
                     </div>
@@ -72,15 +99,18 @@
             </div>
         </div>
 
-        <div id="about-content-hidden" class="col d-block d-lg-none pt-2 pb-2">
-            <p class="fs-5 text-uppercase fst-italic fw-bold">О компании</p>
+        <div id="about-content-hidden" class="col d-block d-lg-none position-relative mt-5">
+            <svg class="pink-wrapper-small" style="left: -18px;" width="55" height="41" viewBox="0 0 55 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.17317 10.3331C10.721 4.68486 15.8544 0.768921 21.7109 0.768921H54.8325L46.4919 31.2048C44.944 36.853 39.8106 40.7689 33.9541 40.7689H0.83252L9.17317 10.3331Z" fill="#F8246B" fill-opacity="0.15"/>
+            </svg>
+            <div class="fs-5 text-uppercase fst-italic fw-bold mb-3">О компании</div>
             <p>АО «Вектор-Бест-Балтика» является региональным представительством АО «Вектор-Бест», крупнейшего российского предприятия по производству тестов для диагностики заболеваний человека методами иммуноферментного анализа, ПЦР в режиме реального времени и клинической биохимии.</p>
             <p>Вот уже 20 лет мы являемся лидерами рынка диагностической продукции для медицинских учреждений Северо-Западного региона, проводим комплексное оснащение лабораторной службы современным оборудованием, наборами реагентов, контрольными и вспомогательными материалами, оказываем сервисную и методическую поддержку.</p>
         </div>
 
-        <div id="special" class="row mt-4">
+        <div id="special" class="row mt-5">
             <div id="special-offers" class="col-12 col-md-8 col-lg-6 col-xl-4">
-                <div class="wrapper-full"><p class="fs-5 text-uppercase fst-italic fw-bold mt-2 pink">Специальные предложения</p></div>
+                <div class="fs-5 text-uppercase fst-italic fw-bold mt-2 mb-3 pink pink-wrapper"><div>Специальные предложения</div></div>
                 <div class="d-flex  position-relative mb-2 ">
                     <img class="pe-4" src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652" alt="">
                     <p>Серологические и молекулярно-биологические методы (ИФА и ПЦР-анализ) для эффективной лабораторной диагностики клещевых инфекций</p>
@@ -93,7 +123,10 @@
         </div>
     </section>
 
-    <section id="bottom-section" class="container pt-4 pb-4">
+    <section id="bottom-section" class="container mb-4 position-relative">
+        <svg class="pink-wrapper-small" width="55" height="41" viewBox="0 0 55 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.17317 10.3331C10.721 4.68486 15.8544 0.768921 21.7109 0.768921H54.8325L46.4919 31.2048C44.944 36.853 39.8106 40.7689 33.9541 40.7689H0.83252L9.17317 10.3331Z" fill="#F8246B" fill-opacity="0.15"/>
+        </svg>
         <span class="fs-5 fw-bold fst-italic">НОВОСТИ</span><a style="padding-left: 0; margin-left: 14px;" href="" class="pink dashed fst-normal">Все новости</a>
         <div class="row mt-3">
             <div class="col-12 col-md-6 col-lg-3 news-item">
